@@ -310,10 +310,10 @@ a {
   line-height: 23px;
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
-  background-color: #FFB673;
-  background-image: -webkit-linear-gradient(top, #FFB673 0, #FF9B40 100%);
-  background-image: linear-gradient(to bottom, #FFB673 0, #FF9B40 100%);
-  border: 1px solid #FF9B40;
+  background-color: #1eb0e9;
+  background-image: -webkit-linear-gradient(top, #1eb0e9 0, #0984c6 100%);
+  background-image: linear-gradient(to bottom, #1eb0e9 0, #0984c6 100%);
+  border: 1px solid #0e5895;
   box-shadow: 0 1px rgba(255, 255, 255, .25);
   -webkit-box-flex: 0;
           box-flex: 0;
@@ -333,7 +333,7 @@ a {
 /* Override standard button active states */
 .bar-title .button:active {
   color: #fff;
-  background-color: #FF9B40;
+  background-color: #0876b1;
 }
 
 /* Directional buttons in title bars (thanks to @GregorAdams for solution - http://cssnerd.com/2011/11/30/the-best-pure-css3-ios-style-arrow-back-button/)
@@ -368,22 +368,22 @@ a {
   height: 27px;
   border-radius: 30px 100px 2px 40px / 2px 40px 30px 100px;
   content: '';
-  box-shadow: inset 1px 0 #FF9B40, inset 0 1px #FF7A00;
+  box-shadow: inset 1px 0 #0e5895, inset 0 1px #0e5895;
   -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, from(#000), color-stop(.33, #000), color-stop(.5, transparent), to(transparent));
                   mask-image: gradient(linear, left top, right bottom, from(#000), color-stop(.33, #000), color-stop(.5, transparent), to(transparent));
 }
 .bar-title .button-prev:before {
   left: -5px;
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#FF9B40), to(#FFB673));
-  background-image: gradient(linear, left bottom, right top, from(#FF9B40), to(#FFB673));
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#0984c6), to(#1eb0e9));
+  background-image: gradient(linear, left bottom, right top, from(#0984c6), to(#1eb0e9));
   border-left: 1.5px solid rgba(255, 255, 255, .25);
   -webkit-transform: rotate(-45deg) skew(-10deg, -10deg);
           transform: rotate(-45deg) skew(-10deg, -10deg);
 }
 .bar-title .button-next:before {
   right: -5px;
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#FFB673), to(#FF9B40));
-  background-image: gradient(linear, left bottom, right top, from(#FFB673), to(#FF9B40));
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#1eb0e9), to(#0984c6));
+  background-image: gradient(linear, left bottom, right top, from(#1eb0e9), to(#0984c6));
   border-top: 1.5px solid rgba(255, 255, 255, .25);
   -webkit-transform: rotate(135deg) skew(-10deg, -10deg);
           transform: rotate(135deg) skew(-10deg, -10deg);
@@ -395,7 +395,7 @@ a {
 .bar-title .button-prev:active:before,
 .bar-title .button-next:active:before {
   color: #fff;
-  background-color: #FF9B40;
+  background-color: #0876b1;
   background-image: none;
 }
 .bar-title .button-prev:active:before,
@@ -444,10 +444,10 @@ a {
 .bar-title .segmented-controller {
   line-height: 18px;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
-  background-color: #FFB673;
-  background-image: -webkit-linear-gradient(top, #FFB673 0, #FF9B40 100%);
-  background-image: linear-gradient(to bottom, #FFB673 0, #FF9B40 100%);
-  border: 1px solid #FF7A00;
+  background-color: #1eb0e9;
+  background-image: -webkit-linear-gradient(top, #1eb0e9 0, #0984c6 100%);
+  background-image: linear-gradient(to bottom, #1eb0e9 0, #0984c6 100%);
+  border: 1px solid #0e5895;
   border-radius: 3px;
   box-shadow: 0 1px rgba(255, 255, 255, .25);
   -webkit-box-flex: 1;
@@ -456,7 +456,7 @@ a {
 
 /* Set color for tab border and highlight */
 .bar-title .segmented-controller li {
-  border-left: 1px solid #ED7100;
+  border-left: 1px solid #0e5895;
   box-shadow: inset 1px 0 rgba(255, 255, 255, .25);
 }
 
@@ -473,7 +473,7 @@ a {
 
 /* Depressed state (active) */
 .bar-title .segmented-controller li.active {
-  background-color: #FF9B40;
+  background-color: #0082c4;
   box-shadow: inset 0 1px 6px rgba(0, 0, 0, .3);
 }
 
@@ -481,6 +481,7 @@ a {
 .bar-title .segmented-controller li > a {
   color: #fff;
 }
+
 
 
 /* Search forms in standard bar
