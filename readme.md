@@ -5,5 +5,5 @@
 "Backbone Directory" is a simple Employee Directory application built with [Backbone.js](http://backbonejs.org) and [Ratchet] (http://maker.github.io/ratchet/).
 
 
-V1.1
+https://build.phonegap.com/apps/589245/share
 
