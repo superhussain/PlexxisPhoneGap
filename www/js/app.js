@@ -1,16 +1,37 @@
-var app = {
-    views: {},
-    models: {},
-    routers: {},
-    utils: {},
-    adapters: {}
-};
+require.config({
 
-$(document).on("ready", function () {
-    app.router = new app.routers.AppRouter();
-    app.utils.templates.load(["HomeView", "EmployeeView", "EmployeeListItemView", "ReportsView", "MapView"],
-        function () {
-            app.router = new app.routers.AppRouter();
-            Backbone.history.start();
-        });
+    baseUrl: 'js/lib',
+
+    paths: {
+        app: '../app',
+        tpl: '../tpl'
+    },
+
+    map: {
+        '*': {
+            'app/models/employee': 'app/models/memory/employee'
+        }
+    },
+
+    shim: {
+        'backbone': {
+            deps: ['underscore', 'jquery'],
+            exports: 'Backbone'
+        },
+        'underscore': {
+            exports: '_'
+        }
+    }
+});
+
+require(['jquery', 'backbone', 'app/router'], function ($, Backbone, Router) {
+
+    var router = new Router();
+
+    $("body").on("click", ".back-button", function (event) {
+        event.preventDefault();
+        window.history.back();
+    });
+
+    Backbone.history.start();
 });
